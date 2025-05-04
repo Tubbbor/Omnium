@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.ArmorItem;
 import net.tubbor.block.ModBlocks;
 import net.tubbor.item.ModItems;
 
@@ -30,5 +31,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.OMNIUM_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.OMNIUM_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.OMNIUM_HOE, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.OMNIUM_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.OMNIUM_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.OMNIUM_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.OMNIUM_BOOTS));
     }
 }

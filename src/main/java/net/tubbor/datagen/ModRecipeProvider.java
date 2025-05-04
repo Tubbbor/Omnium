@@ -98,5 +98,45 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 )
                 .criterion("has_netherite_hoe", InventoryChangedCriterion.Conditions.items(Items.NETHERITE_HOE))
                 .offerTo(exporter, Identifier.of("omnium", "omnium_hoe_upgrade"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.OMNIUM_SMITHING_UPGRADE_TEMPLATE),
+                        Ingredient.ofItems(Items.NETHERITE_HELMET),
+                        Ingredient.ofItems(ModItems.OMNIUM_INGOT),
+                        RecipeCategory.COMBAT,
+                        ModItems.OMNIUM_HELMET
+                )
+                .criterion("has_netherite_helmet", InventoryChangedCriterion.Conditions.items(Items.NETHERITE_HELMET))
+                .offerTo(exporter, Identifier.of("omnium", "omnium_helmet_upgrade"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.OMNIUM_SMITHING_UPGRADE_TEMPLATE),
+                        Ingredient.ofItems(Items.NETHERITE_CHESTPLATE),
+                        Ingredient.ofItems(ModItems.OMNIUM_INGOT),
+                        RecipeCategory.COMBAT,
+                        ModItems.OMNIUM_CHESTPLATE
+                )
+                .criterion("has_netherite_chestplate", InventoryChangedCriterion.Conditions.items(Items.NETHERITE_CHESTPLATE))
+                .offerTo(exporter, Identifier.of("omnium", "omnium_chestplate_upgrade"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.OMNIUM_SMITHING_UPGRADE_TEMPLATE),
+                        Ingredient.ofItems(Items.NETHERITE_LEGGINGS),
+                        Ingredient.ofItems(ModItems.OMNIUM_INGOT),
+                        RecipeCategory.COMBAT,
+                        ModItems.OMNIUM_LEGGINGS
+                )
+                .criterion("has_netherite_leggings", InventoryChangedCriterion.Conditions.items(Items.NETHERITE_LEGGINGS))
+                .offerTo(exporter, Identifier.of("omnium", "omnium_leggings_upgrade"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.OMNIUM_SMITHING_UPGRADE_TEMPLATE),
+                        Ingredient.ofItems(Items.NETHERITE_BOOTS),
+                        Ingredient.ofItems(ModItems.OMNIUM_INGOT),
+                        RecipeCategory.COMBAT,
+                        ModItems.OMNIUM_BOOTS
+                )
+                .criterion("has_boots_helmet", InventoryChangedCriterion.Conditions.items(Items.NETHERITE_BOOTS))
+                .offerTo(exporter, Identifier.of("omnium", "omnium_boots_upgrade"));
     }
 }

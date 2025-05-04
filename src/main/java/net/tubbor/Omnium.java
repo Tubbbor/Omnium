@@ -3,6 +3,9 @@ package net.tubbor;
 import net.fabricmc.api.ModInitializer;
 
 import net.tubbor.block.ModBlocks;
+import net.tubbor.effect.ModEffects;
+import net.tubbor.enchantment.ModEnchantmentEffects;
+import net.tubbor.enchantment.ModEnchantments;
 import net.tubbor.item.ModItemGroups;
 import net.tubbor.item.ModItems;
 import org.slf4j.Logger;
@@ -17,5 +20,7 @@ public class Omnium implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModEffects.registerEffects();
+		ModEnchantmentEffects.registerEnchantmentEffects();
 	}
 }

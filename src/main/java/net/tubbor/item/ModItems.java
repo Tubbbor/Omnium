@@ -7,6 +7,9 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.tubbor.Omnium;
 
+import static net.minecraft.item.Items.ENCHANTED_BOOK;
+import static net.minecraft.item.Items.register;
+
 
 public class ModItems {
 
@@ -36,6 +39,23 @@ public class ModItems {
             new HoeItem(ModToolMaterials.OMNIUM, new Item.Settings()
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.OMNIUM, -4.0F, 0.0F))));
 
+    public static final Item OMNIUM_HELMET = registerItem(
+            "omnium_helmet",
+            new ArmorItem(ModArmorMaterials.OMNIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(40)))
+    );
+    public static final Item OMNIUM_CHESTPLATE = registerItem(
+            "omnium_chestplate",
+            new ArmorItem(ModArmorMaterials.OMNIUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(40)))
+    );
+    public static final Item OMNIUM_LEGGINGS = registerItem(
+            "omnium_leggings",
+            new ArmorItem(ModArmorMaterials.OMNIUM_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(40)))
+    );
+    public static final Item OMNIUM_BOOTS = registerItem(
+            "omnium_boots",
+            new ArmorItem(ModArmorMaterials.OMNIUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(40)))
+    );
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Omnium.MOD_ID, name), item);
     }
@@ -54,6 +74,11 @@ public class ModItems {
             entries.add(OMNIUM_SWORD);
             entries.add(OMNIUM_SHOVEL);
             entries.add(OMNIUM_HOE);
+
+            entries.add(OMNIUM_HELMET);
+            entries.add(OMNIUM_CHESTPLATE);
+            entries.add(OMNIUM_LEGGINGS);
+            entries.add(OMNIUM_BOOTS);
         });
     }
 }

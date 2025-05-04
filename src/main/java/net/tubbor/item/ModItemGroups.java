@@ -31,6 +31,11 @@ public class ModItemGroups {
                         entries.add(ModItems.OMNIUM_PICKAXE);
                         entries.add(ModItems.OMNIUM_SHOVEL);
                         entries.add(ModItems.OMNIUM_HOE);
+
+                        entries.add(ModItems.OMNIUM_HELMET);
+                        entries.add(ModItems.OMNIUM_CHESTPLATE);
+                        entries.add(ModItems.OMNIUM_LEGGINGS);
+                        entries.add(ModItems.OMNIUM_BOOTS);
                     })
                     .build());
 

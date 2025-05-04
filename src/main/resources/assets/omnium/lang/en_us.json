@@ -12,5 +12,14 @@
   "item.omnium.omnium_shovel": "Omnium Shovel",
   "item.omnium.omnium_hoe": "Omnium Hoe",
 
+  "item.omnium.omnium_helmet": "Omnium Helmet",
+  "item.omnium.omnium_chestplate": "Omnium Chestplate",
+  "item.omnium.omnium_leggings": "Omnium Leggings",
+  "item.omnium.omnium_boots": "Omnium Boots",
+
+  "effect.omnium.frostburn": "Frontburn",
+
+  "enchancement.omnium.frostburn": "Frostburn",
+
   "itemgroup.omnium.omnium": "Omnium"
 }
