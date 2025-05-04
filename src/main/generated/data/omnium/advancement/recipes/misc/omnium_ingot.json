@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_chartreuse": {
+      "conditions": {
+        "items": [
+          {
+            "items": "omnium:chartreuse"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_indigo_shard": {
+      "conditions": {
+        "items": [
+          {
+            "items": "omnium:indigo_shard"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "omnium:omnium_ingot"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_indigo_shard",
+      "has_chartreuse"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "omnium:omnium_ingot"
+    ]
+  }
+}

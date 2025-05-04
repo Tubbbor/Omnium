@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "omnium",
+	"version": "${version}",
+	"name": "Omnium",
+	"description": "This is my first mod and its adds a new end game material",
+	"authors": [
+		"Tubbor"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/omnium/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.tubbor.Omnium"
+		],
+		"fabric-datagen": [
+			"net.tubbor.OmniumDataGenerator"
+		],
+		"client": [
+			"net.tubbor.OmniumClient"
+		]
+	},
+	"mixins": [
+		"omnium.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

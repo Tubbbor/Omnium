@@ -1,0 +1,16 @@
+{
+  "item.omnium.omnium_ingot": "Omnium Ingot",
+  "item.omnium.indigo_shard": "Indigo Shard",
+  "item.omnium.chartreuse": "Chartreuse",
+  "item.omnium.omnium_smithing_upgrade_template": "Omnium Smithing Template",
+
+  "block.omnium.omnium_block": "Omnium Block",
+
+  "item.omnium.omnium_axe": "Omnium Axe",
+  "item.omnium.omnium_sword": "Omnium Sword",
+  "item.omnium.omnium_pickaxe": "Omnium Pickaxe",
+  "item.omnium.omnium_shovel": "Omnium Shovel",
+  "item.omnium.omnium_hoe": "Omnium Hoe",
+
+  "itemgroup.omnium.omnium": "Omnium"
+}

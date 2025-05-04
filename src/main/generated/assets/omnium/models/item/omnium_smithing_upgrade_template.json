@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "omnium:item/omnium_smithing_upgrade_template"
+  }
+}

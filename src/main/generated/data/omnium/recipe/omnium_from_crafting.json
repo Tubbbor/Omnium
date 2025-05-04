@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "omnium:chartreuse"
+    },
+    "I": {
+      "item": "omnium:indigo_shard"
+    }
+  },
+  "pattern": [
+    " I ",
+    "ICI",
+    " I "
+  ],
+  "result": {
+    "count": 1,
+    "id": "omnium:omnium_ingot"
+  }
+}
