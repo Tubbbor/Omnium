@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-04T17:31:22.5626618	Omnium/Model Definitions
+// 1.21.1	2025-05-06T18:31:28.6468606	Omnium/Model Definitions
 2dbadd64eb39b03df9a34c846dd2bc71a5372991 assets\omnium\models\item\omnium_helmet.json
 06be551ab116631b4c8569d8bff0d428fa2b13c7 assets\omnium\models\item\indigo_shard.json
 8af440618888506fff672db0101c2f7b309d2090 assets\omnium\models\item\omnium_helmet_amethyst_trim.json
@@ -26,8 +26,8 @@ c9cf3015b013cf63dde58a345e81cf770d07d72e assets\omnium\models\item\omnium_boots_
 b5e92e6f26ce5aede4728bfccf4cd5c1b1a9da6f assets\omnium\models\item\omnium_leggings_iron_trim.json
 f025a797e76c390cd7837e8cfb1f0bf8c9a750fd assets\omnium\models\item\omnium_helmet_diamond_trim.json
 9ea7d111455b68c1a92e5c57d00d5b2800a2ad75 assets\omnium\models\item\omnium_helmet_redstone_trim.json
-34d658be6c8931cab5a9196651ba752720e3ee66 assets\omnium\models\item\omnium_boots.json
 d30f5c4e4a8278ba9213ecbd6ad2ab28904a045a assets\omnium\models\item\omnium_chestplate_diamond_trim.json
+34d658be6c8931cab5a9196651ba752720e3ee66 assets\omnium\models\item\omnium_boots.json
 89c1e57e7dec187aa63a67e0f5b03a777b304ccb assets\omnium\models\item\omnium_chestplate_redstone_trim.json
 994f36d40525090b99c0f3eef42ced8ccfee0145 assets\omnium\models\item\omnium_block.json
 96396f1bf54ed9ea90800785a514ed74627371da assets\omnium\models\item\omnium_helmet_emerald_trim.json

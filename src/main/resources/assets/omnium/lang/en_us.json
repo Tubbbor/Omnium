@@ -17,9 +17,9 @@
   "item.omnium.omnium_leggings": "Omnium Leggings",
   "item.omnium.omnium_boots": "Omnium Boots",
 
-  "effect.omnium.frostburn": "Frontburn",
+  "effect.omnium.frostburn": "Frostburn",
 
-  "enchancement.omnium.frostburn": "Frostburn",
+  "enchantment.omnium.frost": "Frost",
 
   "itemgroup.omnium.omnium": "Omnium"
 }

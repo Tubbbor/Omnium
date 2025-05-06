@@ -5,7 +5,6 @@ import net.fabricmc.api.ModInitializer;
 import net.tubbor.block.ModBlocks;
 import net.tubbor.effect.ModEffects;
 import net.tubbor.enchantment.ModEnchantmentEffects;
-import net.tubbor.enchantment.ModEnchantments;
 import net.tubbor.item.ModItemGroups;
 import net.tubbor.item.ModItems;
 import org.slf4j.Logger;

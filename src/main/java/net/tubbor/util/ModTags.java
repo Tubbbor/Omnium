@@ -19,6 +19,7 @@ public class ModTags {
 
     public static class Items {
         public static final TagKey<Item> OMNIUM_TOOLS = createTag("omnium_tools");
+        public static final TagKey<Item> OMNIUM_WEAPON = createTag("omnium_weapon");
 
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, Identifier.of(Omnium.MOD_ID, name));

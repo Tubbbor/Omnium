@@ -24,6 +24,10 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.OMNIUM_SHOVEL)
                 .add(ModItems.OMNIUM_HOE);
 
+        getOrCreateTagBuilder(ModTags.Items.OMNIUM_WEAPON)
+                .add(ModItems.OMNIUM_SWORD)
+                .add(ModItems.OMNIUM_AXE);
+
         getOrCreateTagBuilder(ItemTags.AXES)
                 .add(ModItems.OMNIUM_AXE);
         getOrCreateTagBuilder(ItemTags.SWORDS)
