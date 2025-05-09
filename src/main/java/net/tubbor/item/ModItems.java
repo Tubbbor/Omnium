@@ -6,19 +6,23 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.tubbor.Omnium;
+import net.tubbor.block.ModBlocks;
 
-import static net.minecraft.item.Items.ENCHANTED_BOOK;
 import static net.minecraft.item.Items.register;
 
 
 public class ModItems {
 
     public static final Item OMNIUM_INGOT = registerItem("omnium_ingot", new Item(new Item.Settings()));
+    public static final Item FROZEN_CORE = registerItem("frozen_core", new Item(new Item.Settings()));
     public static final Item INDIGO_SHARD = registerItem("indigo_shard", new Item(new Item.Settings()));
+    public static final Item LAQUEM_INGOT = registerItem("laquem_ingot", new Item(new Item.Settings()));
+    public static final Item SILVA = registerItem("silva",
+            new AliasedBlockItem(ModBlocks.SILVA_BUSH, new Item.Settings()));
     public static final Item CHARTREUSE = registerItem("chartreuse", new Item(new Item.Settings()));
 
-    public static final Item OMNIUM_SMITHING_UPGRADE_TEMPLATE = registerItem(
-            "omnium_smithing_upgrade_template",
+    public static final Item ANTIQUE_SMITHING_UPGRADE_TEMPLATE = registerItem(
+            "antique_smithing_upgrade_template",
             new Item(new Item.Settings())
     );
 
@@ -65,9 +69,12 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.SEARCH).register(entries -> {
             entries.add(OMNIUM_INGOT);
+            entries.add(FROZEN_CORE);
             entries.add(INDIGO_SHARD);
+            entries.add(LAQUEM_INGOT);
+            entries.add(SILVA);
             entries.add(CHARTREUSE);
-            entries.add(OMNIUM_SMITHING_UPGRADE_TEMPLATE);
+            entries.add(ANTIQUE_SMITHING_UPGRADE_TEMPLATE);
 
             entries.add(OMNIUM_AXE);
             entries.add(OMNIUM_PICKAXE);

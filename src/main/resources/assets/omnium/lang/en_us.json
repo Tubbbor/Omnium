@@ -1,10 +1,14 @@
 {
   "item.omnium.omnium_ingot": "Omnium Ingot",
+  "item.omnium.frozen_core": "Frozen Core",
   "item.omnium.indigo_shard": "Indigo Shard",
+  "item.omnium.laquem_ingot": "Laquem Ingot",
+  "item.omnium.silva": "Silva",
   "item.omnium.chartreuse": "Chartreuse",
-  "item.omnium.omnium_smithing_upgrade_template": "Omnium Smithing Template",
+  "item.omnium.antique_smithing_upgrade_template": "Antique Smithing Template",
 
   "block.omnium.omnium_block": "Omnium Block",
+  "block.omnium.silva_bush": "Silva Bush",
 
   "item.omnium.omnium_axe": "Omnium Axe",
   "item.omnium.omnium_sword": "Omnium Sword",

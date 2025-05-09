@@ -2,17 +2,20 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "C": {
-      "item": "omnium:chartreuse"
+    "F": {
+      "item": "omnium:frozen_core"
     },
     "I": {
       "item": "omnium:indigo_shard"
+    },
+    "P": {
+      "item": "minecraft:prismarine_crystals"
     }
   },
   "pattern": [
-    " I ",
-    "ICI",
-    " I "
+    "PIP",
+    "IFI",
+    "PIP"
   ],
   "result": {
     "count": 1,

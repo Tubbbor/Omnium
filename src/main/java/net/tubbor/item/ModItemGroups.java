@@ -2,7 +2,6 @@ package net.tubbor.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemGroups;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -20,9 +19,12 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.omnium.omnium"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.OMNIUM_INGOT);
+                        entries.add(ModItems.FROZEN_CORE);
                         entries.add(ModItems.INDIGO_SHARD);
+                        entries.add(ModItems.LAQUEM_INGOT);
+                        entries.add(ModItems.SILVA);
                         entries.add(ModItems.CHARTREUSE);
-                        entries.add(ModItems.OMNIUM_SMITHING_UPGRADE_TEMPLATE);
+                        entries.add(ModItems.ANTIQUE_SMITHING_UPGRADE_TEMPLATE);
 
                         entries.add(ModBlocks.OMNIUM_BLOCK);
 

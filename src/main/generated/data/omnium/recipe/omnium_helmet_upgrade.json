@@ -11,6 +11,6 @@
     "id": "omnium:omnium_helmet"
   },
   "template": {
-    "item": "omnium:omnium_smithing_upgrade_template"
+    "item": "omnium:antique_smithing_upgrade_template"
   }
 }

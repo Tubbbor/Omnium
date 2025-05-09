@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_indigo_shard": {
+    "has_frozen_core": {
       "conditions": {
         "items": [
           {
-            "items": "omnium:indigo_shard"
+            "items": "omnium:frozen_core"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_indigo_shard"
+      "has_frozen_core"
     ]
   ],
   "rewards": {

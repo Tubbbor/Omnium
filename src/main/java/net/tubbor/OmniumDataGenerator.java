@@ -6,6 +6,8 @@ import net.minecraft.registry.RegistryBuilder;
 import net.minecraft.registry.RegistryKeys;
 import net.tubbor.datagen.*;
 import net.tubbor.enchantment.ModEnchantments;
+import net.tubbor.world.ModConfiguredFeatures;
+import net.tubbor.world.ModPlacedFeatures;
 
 public class OmniumDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -23,5 +25,8 @@ public class OmniumDataGenerator implements DataGeneratorEntrypoint {
 	@Override
 	public void buildRegistry(RegistryBuilder registryBuilder) {
 		registryBuilder.addRegistry(RegistryKeys.ENCHANTMENT, ModEnchantments::bootstrap);
+
+		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
 	}
 }

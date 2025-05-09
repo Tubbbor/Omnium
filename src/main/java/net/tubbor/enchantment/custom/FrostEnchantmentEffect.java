@@ -16,7 +16,7 @@ public record FrostEnchantmentEffect() implements EnchantmentEntityEffect {
     @Override
     public void apply(ServerWorld world, int level, EnchantmentEffectContext context, Entity user, Vec3d pos) {
         if (user instanceof LivingEntity livingUser) {
-            int duration = 200;
+            int duration = 100;
             int amplifier = Math.max(0, level - 1);
             livingUser.addStatusEffect(new StatusEffectInstance(ModEffects.FROSTBURN, duration, amplifier));
         }

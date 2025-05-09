@@ -11,7 +11,7 @@ public class FrostburnEffect extends StatusEffect {
 
     @Override
     public boolean applyUpdateEffect(LivingEntity entity, int amplifier) {
-            entity.damage(entity.getDamageSources().magic(), 0.5F + amplifier);
+            entity.damage(entity.getDamageSources().freeze(), 0.5F + amplifier);
 
         return super.applyUpdateEffect(entity, amplifier);
     }

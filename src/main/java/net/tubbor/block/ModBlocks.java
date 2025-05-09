@@ -17,6 +17,12 @@ public class ModBlocks {
 
     public static final Block OMNIUM_BLOCK = registerBlock("omnium_block",
             new Block(AbstractBlock.Settings.create().strength(5.5F, 7.0F).requiresTool().sounds(BlockSoundGroup.METAL)));
+    public static final Block SILVA_BUSH = registerBlockWithoutBlockItem("silva_bush",
+            new Block(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)));
+
+    private static Block registerBlockWithoutBlockItem(String name, Block block) {
+        return Registry.register(Registries.BLOCK, Identifier.of(Omnium.MOD_ID, name), block);
+    }
 
     public static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
