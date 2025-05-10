@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "omnium:block/indigo_block"
+    }
+  }
+}

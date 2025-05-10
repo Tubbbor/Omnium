@@ -8,8 +8,6 @@ import net.minecraft.util.Identifier;
 import net.tubbor.Omnium;
 import net.tubbor.block.ModBlocks;
 
-import static net.minecraft.item.Items.register;
-
 
 public class ModItems {
 //Items

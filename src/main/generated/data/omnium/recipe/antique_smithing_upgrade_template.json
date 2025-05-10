@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "omnium:antique_smithing_upgrade_template"
+    },
+    "E": {
+      "item": "minecraft:echo_shard"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "pattern": [
+    "EAE",
+    "ENE",
+    "EEE"
+  ],
+  "result": {
+    "count": 2,
+    "id": "omnium:antique_smithing_upgrade_template"
+  }
+}

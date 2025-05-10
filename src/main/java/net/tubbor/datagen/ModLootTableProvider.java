@@ -18,7 +18,6 @@ import net.tubbor.block.ModBlocks;
 import net.tubbor.item.ModItems;
 
 import java.util.concurrent.CompletableFuture;
-import java.util.function.Function;
 
 public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public ModLootTableProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {

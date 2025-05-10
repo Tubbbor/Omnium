@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_indigo_shard": {
+      "conditions": {
+        "items": [
+          {
+            "items": "omnium:indigo_shard"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "omnium:indigo_from_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_indigo_shard"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "omnium:indigo_from_block"
+    ]
+  }
+}
