@@ -28,5 +28,6 @@ public class OmniumDataGenerator implements DataGeneratorEntrypoint {
 
 		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
+
 	}
 }

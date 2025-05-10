@@ -12,13 +12,16 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.tubbor.Omnium;
+import net.tubbor.block.custom.SilvaBushBlock;
 
 public class ModBlocks {
 
     public static final Block OMNIUM_BLOCK = registerBlock("omnium_block",
             new Block(AbstractBlock.Settings.create().strength(5.5F, 7.0F).requiresTool().sounds(BlockSoundGroup.METAL)));
+    public static final Block INDIGO_BLOCK = registerBlock("indigo_block",
+            new Block(AbstractBlock.Settings.create().strength(2.0F, 2.0F).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
     public static final Block SILVA_BUSH = registerBlockWithoutBlockItem("silva_bush",
-            new Block(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)));
+            new SilvaBushBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)));
 
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registries.BLOCK, Identifier.of(Omnium.MOD_ID, name), block);
@@ -39,6 +42,7 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.SEARCH).register(entries -> {
             entries.add(ModBlocks.OMNIUM_BLOCK);
+            entries.add(ModBlocks.INDIGO_BLOCK);
         });
     }
 }

@@ -3,6 +3,7 @@ package net.tubbor.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.advancement.criterion.InventoryChangedCriterion;
+import net.minecraft.block.Block;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
@@ -33,6 +34,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.OMNIUM_INGOT), conditionsFromItem(ModItems.OMNIUM_INGOT))
                 .offerTo(exporter, Identifier.of(Omnium.MOD_ID, "omnium_from_block"));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.INDIGO_BLOCK)
+                .pattern("##")
+                .pattern("##")
+                .input('#', ModItems.INDIGO_SHARD)
+                .criterion(hasItem(ModItems.INDIGO_SHARD), conditionsFromItem(ModItems.INDIGO_SHARD))
+                .offerTo(exporter, Identifier.of(Omnium.MOD_ID, "indigo_from_block"));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.OMNIUM_INGOT)
                 .pattern("PIP")
                 .pattern("IFI")
@@ -52,6 +60,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.SILVA), conditionsFromItem(ModItems.SILVA))
                 .offerTo(exporter, Identifier.of(Omnium.MOD_ID, "laquem_from_crafting"));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FROZEN_CORE)
+                .pattern("PBP")
+                .pattern("BHB")
+                .pattern("PBP")
+                .input('H', Items.HEART_OF_THE_SEA)
+                .input('B', Items.BLUE_ICE)
+                .input('P', Items.PACKED_ICE)
+                .criterion(hasItem(Items.BEDROCK), conditionsFromItem(Items.BEDROCK))
+                .offerTo(exporter, Identifier.of(Omnium.MOD_ID, "frozen_core_from_crafting"));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ANTIQUE_SMITHING_UPGRADE_TEMPLATE, 2)
                 .pattern("EAE")
                 .pattern("ENE")
@@ -65,6 +83,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.OMNIUM_INGOT, 9)
                 .input(ModBlocks.OMNIUM_BLOCK)
                 .criterion(hasItem(ModBlocks.OMNIUM_BLOCK), conditionsFromItem(ModBlocks.OMNIUM_BLOCK))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.INDIGO_SHARD, 4)
+                .input(ModBlocks.INDIGO_BLOCK)
+                .criterion(hasItem(ModBlocks.INDIGO_BLOCK), conditionsFromItem(ModBlocks.INDIGO_BLOCK))
                 .offerTo(exporter);
 
         SmithingTransformRecipeJsonBuilder.create(

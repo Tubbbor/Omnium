@@ -12,7 +12,7 @@ import static net.minecraft.item.Items.register;
 
 
 public class ModItems {
-
+//Items
     public static final Item OMNIUM_INGOT = registerItem("omnium_ingot", new Item(new Item.Settings()));
     public static final Item FROZEN_CORE = registerItem("frozen_core", new Item(new Item.Settings()));
     public static final Item INDIGO_SHARD = registerItem("indigo_shard", new Item(new Item.Settings()));
@@ -26,7 +26,7 @@ public class ModItems {
             new Item(new Item.Settings())
     );
 
-
+//Tools
     public static final Item OMNIUM_AXE = registerItem("omnium_axe",
             new AxeItem(ModToolMaterials.OMNIUM, new Item.Settings()
                     .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.OMNIUM, 5.0F, -3.0F))));
@@ -43,6 +43,7 @@ public class ModItems {
             new HoeItem(ModToolMaterials.OMNIUM, new Item.Settings()
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.OMNIUM, -4.0F, 0.0F))));
 
+//Armor
     public static final Item OMNIUM_HELMET = registerItem(
             "omnium_helmet",
             new ArmorItem(ModArmorMaterials.OMNIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(40)))

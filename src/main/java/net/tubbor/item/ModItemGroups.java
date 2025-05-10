@@ -27,6 +27,7 @@ public class ModItemGroups {
                         entries.add(ModItems.ANTIQUE_SMITHING_UPGRADE_TEMPLATE);
 
                         entries.add(ModBlocks.OMNIUM_BLOCK);
+                        entries.add(ModBlocks.INDIGO_BLOCK);
 
                         entries.add(ModItems.OMNIUM_AXE);
                         entries.add(ModItems.OMNIUM_SWORD);

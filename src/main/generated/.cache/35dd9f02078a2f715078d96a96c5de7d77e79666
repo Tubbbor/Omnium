@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-09T22:51:08.6417114	Omnium/Model Definitions
+// 1.21.1	2025-05-11T00:36:10.3351845	Omnium/Model Definitions
 2dbadd64eb39b03df9a34c846dd2bc71a5372991 assets\omnium\models\item\omnium_helmet.json
 06be551ab116631b4c8569d8bff0d428fa2b13c7 assets\omnium\models\item\indigo_shard.json
 8af440618888506fff672db0101c2f7b309d2090 assets\omnium\models\item\omnium_helmet_amethyst_trim.json
@@ -34,13 +34,16 @@ d30f5c4e4a8278ba9213ecbd6ad2ab28904a045a assets\omnium\models\item\omnium_chestp
 96396f1bf54ed9ea90800785a514ed74627371da assets\omnium\models\item\omnium_helmet_emerald_trim.json
 0dedddfebbdeba574663f561b5e7ba87085386fc assets\omnium\models\item\omnium_chestplate_quartz_trim.json
 dfa2ab887e5fcb88e985fa11826bddd4a731475d assets\omnium\blockstates\silva_bush.json
+5244edfbd9122f00f6fa9e1133b4ba1f9da67cb1 assets\omnium\models\item\indigo_block.json
 e3aa977272c6c5633f1a8ac65acc4508b0ad375e assets\omnium\models\item\omnium_leggings_diamond_trim.json
+9d8fbe702585f5624bef13f36d381c6996880959 assets\omnium\models\block\indigo_block.json
 d5e0de815dd684d9dfabdf59f5da33768dcda403 assets\omnium\models\item\omnium_sword.json
 5425d054a677d629fc943b3ca858fef2bfc8dcbf assets\omnium\models\item\omnium_leggings_copper_trim.json
 0db2ad9144b906b60fa6af4bb6b2d863d8f82da9 assets\omnium\models\item\omnium_boots_emerald_trim.json
 6de6145099d48b0daba7207037eea89832ec678f assets\omnium\models\item\omnium_boots_copper_trim.json
 ec18f46ca8af12be24809667e127e4bdfb5d4091 assets\omnium\models\item\omnium_boots_gold_trim.json
 5bd79b4b4ad0efb5f9f037a01447e86c67f48402 assets\omnium\models\item\omnium_chestplate_gold_trim.json
+1976364b826ff0fcca9c18b92eddfc055ea1df9f assets\omnium\blockstates\indigo_block.json
 584811da28410a0cd33d65d7ca34627f39fda0ef assets\omnium\models\item\omnium_leggings_lapis_trim.json
 95cfa2bc9bb25385c48fee7cfc61992c39d589bf assets\omnium\models\item\omnium_boots_quartz_trim.json
 089e277284c389ff42f2456b14c4c4fb017d5249 assets\omnium\models\item\omnium_leggings_quartz_trim.json

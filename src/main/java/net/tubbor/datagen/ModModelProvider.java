@@ -2,13 +2,11 @@ package net.tubbor.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.block.SweetBerryBushBlock;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
 import net.minecraft.item.ArmorItem;
 import net.tubbor.block.ModBlocks;
-import net.tubbor.block.custom.SilvaBushBlock;
 import net.tubbor.item.ModItems;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -19,8 +17,11 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.OMNIUM_BLOCK);
-        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.SILVA_BUSH, BlockStateModelGenerator.TintType.NOT_TINTED,
-                SilvaBushBlock.AGE, 0, 1, 2, 3);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.INDIGO_BLOCK);
+        blockStateModelGenerator.registerTintableCrossBlockState(
+                ModBlocks.SILVA_BUSH,
+                BlockStateModelGenerator.TintType.NOT_TINTED
+        );
     }
 
     @Override
