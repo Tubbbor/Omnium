@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "omnium:laquem_ingot"
+  },
+  "base": {
+    "item": "minecraft:netherite_leggings"
+  },
+  "result": {
+    "count": 1,
+    "id": "omnium:laquem_leggings"
+  },
+  "template": {
+    "item": "omnium:antique_smithing_upgrade_template"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "omnium:laquem_ingot"
+  },
+  "base": {
+    "item": "minecraft:netherite_axe"
+  },
+  "result": {
+    "count": 1,
+    "id": "omnium:laquem_axe"
+  },
+  "template": {
+    "item": "omnium:antique_smithing_upgrade_template"
+  }
+}
