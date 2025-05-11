@@ -12,7 +12,12 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
     OMNIUM(ModTags.Blocks.INCORRECT_FOR_OMNIUM_TOOL,
-            2562, 11.0F, 5.0F, 17, () -> Ingredient.ofItems(ModItems.OMNIUM_INGOT));
+            2562, 11.0F, 5.0F, 17, () -> Ingredient.ofItems(ModItems.OMNIUM_INGOT)),
+
+    LAQUEM(ModTags.Blocks.INCORRECT_FOR_LAQUEM_TOOL,
+            2562, 11.0F, 5.0F, 17, () -> Ingredient.ofItems(ModItems.LAQUEM_INGOT));
+
+
 
     private final TagKey<Block> inverseTag;
     private final int itemDurability;

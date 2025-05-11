@@ -141,6 +141,56 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         SmithingTransformRecipeJsonBuilder.create(
                         Ingredient.ofItems(ModItems.ANTIQUE_SMITHING_UPGRADE_TEMPLATE),
+                        Ingredient.ofItems(Items.NETHERITE_AXE),
+                        Ingredient.ofItems(ModItems.LAQUEM_INGOT),
+                        RecipeCategory.TOOLS,
+                        ModItems.LAQUEM_AXE
+                )
+                .criterion("has_netherite_axe", InventoryChangedCriterion.Conditions.items(Items.NETHERITE_AXE))
+                .offerTo(exporter, Identifier.of("laquem", "laquem_axe_upgrade"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ANTIQUE_SMITHING_UPGRADE_TEMPLATE),
+                        Ingredient.ofItems(Items.NETHERITE_SWORD),
+                        Ingredient.ofItems(ModItems.LAQUEM_INGOT),
+                        RecipeCategory.TOOLS,
+                        ModItems.LAQUEM_SWORD
+                )
+                .criterion("has_netherite_sword", InventoryChangedCriterion.Conditions.items(Items.NETHERITE_SWORD))
+                .offerTo(exporter, Identifier.of("laquem", "laquem_sword_upgrade"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ANTIQUE_SMITHING_UPGRADE_TEMPLATE),
+                        Ingredient.ofItems(Items.NETHERITE_PICKAXE),
+                        Ingredient.ofItems(ModItems.LAQUEM_INGOT),
+                        RecipeCategory.TOOLS,
+                        ModItems.LAQUEM_PICKAXE
+                )
+                .criterion("has_netherite_pickaxe", InventoryChangedCriterion.Conditions.items(Items.NETHERITE_PICKAXE))
+                .offerTo(exporter, Identifier.of("laquem", "laquem_pickaxe_upgrade"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ANTIQUE_SMITHING_UPGRADE_TEMPLATE),
+                        Ingredient.ofItems(Items.NETHERITE_SHOVEL),
+                        Ingredient.ofItems(ModItems.LAQUEM_INGOT),
+                        RecipeCategory.TOOLS,
+                        ModItems.LAQUEM_SHOVEL
+                )
+                .criterion("has_netherite_shovel", InventoryChangedCriterion.Conditions.items(Items.NETHERITE_SHOVEL))
+                .offerTo(exporter, Identifier.of("laquem", "laquem_shovel_upgrade"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ANTIQUE_SMITHING_UPGRADE_TEMPLATE),
+                        Ingredient.ofItems(Items.NETHERITE_HOE),
+                        Ingredient.ofItems(ModItems.LAQUEM_INGOT),
+                        RecipeCategory.TOOLS,
+                        ModItems.LAQUEM_HOE
+                )
+                .criterion("has_netherite_hoe", InventoryChangedCriterion.Conditions.items(Items.NETHERITE_HOE))
+                .offerTo(exporter, Identifier.of("laquem", "laquem_hoe_upgrade"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ANTIQUE_SMITHING_UPGRADE_TEMPLATE),
                         Ingredient.ofItems(Items.NETHERITE_HELMET),
                         Ingredient.ofItems(ModItems.OMNIUM_INGOT),
                         RecipeCategory.COMBAT,
@@ -178,5 +228,45 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 )
                 .criterion("has_boots_helmet", InventoryChangedCriterion.Conditions.items(Items.NETHERITE_BOOTS))
                 .offerTo(exporter, Identifier.of("omnium", "omnium_boots_upgrade"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ANTIQUE_SMITHING_UPGRADE_TEMPLATE),
+                        Ingredient.ofItems(Items.NETHERITE_HELMET),
+                        Ingredient.ofItems(ModItems.LAQUEM_INGOT),
+                        RecipeCategory.COMBAT,
+                        ModItems.LAQUEM_HELMET
+                )
+                .criterion("has_netherite_helmet", InventoryChangedCriterion.Conditions.items(Items.NETHERITE_HELMET))
+                .offerTo(exporter, Identifier.of("laquem", "laquem_helmet_upgrade"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ANTIQUE_SMITHING_UPGRADE_TEMPLATE),
+                        Ingredient.ofItems(Items.NETHERITE_CHESTPLATE),
+                        Ingredient.ofItems(ModItems.LAQUEM_INGOT),
+                        RecipeCategory.COMBAT,
+                        ModItems.LAQUEM_CHESTPLATE
+                )
+                .criterion("has_netherite_chestplate", InventoryChangedCriterion.Conditions.items(Items.NETHERITE_CHESTPLATE))
+                .offerTo(exporter, Identifier.of("laquem", "laquem_chestplate_upgrade"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ANTIQUE_SMITHING_UPGRADE_TEMPLATE),
+                        Ingredient.ofItems(Items.NETHERITE_LEGGINGS),
+                        Ingredient.ofItems(ModItems.LAQUEM_INGOT),
+                        RecipeCategory.COMBAT,
+                        ModItems.LAQUEM_LEGGINGS
+                )
+                .criterion("has_netherite_leggings", InventoryChangedCriterion.Conditions.items(Items.NETHERITE_LEGGINGS))
+                .offerTo(exporter, Identifier.of("laquem", "laquem_leggings_upgrade"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ANTIQUE_SMITHING_UPGRADE_TEMPLATE),
+                        Ingredient.ofItems(Items.NETHERITE_BOOTS),
+                        Ingredient.ofItems(ModItems.LAQUEM_INGOT),
+                        RecipeCategory.COMBAT,
+                        ModItems.LAQUEM_BOOTS
+                )
+                .criterion("has_netherite_boots", InventoryChangedCriterion.Conditions.items(Items.NETHERITE_BOOTS))
+                .offerTo(exporter, Identifier.of("laquem", "laquem_boots_upgrade"));
     }
 }

@@ -3,6 +3,10 @@
     "omnium:omnium_helmet",
     "omnium:omnium_chestplate",
     "omnium:omnium_leggings",
-    "omnium:omnium_boots"
+    "omnium:omnium_boots",
+    "omnium:laquem_helmet",
+    "omnium:laquem_chestplate",
+    "omnium:laquem_leggings",
+    "omnium:laquem_boots"
   ]
 }

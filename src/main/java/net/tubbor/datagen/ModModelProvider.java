@@ -39,10 +39,19 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.OMNIUM_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.OMNIUM_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.OMNIUM_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.LAQUEM_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.LAQUEM_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.LAQUEM_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.LAQUEM_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.LAQUEM_HOE, Models.HANDHELD);
 
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.OMNIUM_HELMET));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.OMNIUM_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.OMNIUM_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.OMNIUM_BOOTS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.LAQUEM_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.LAQUEM_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.LAQUEM_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.LAQUEM_BOOTS));
     }
 }

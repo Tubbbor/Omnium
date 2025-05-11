@@ -41,6 +41,22 @@ public class ModItems {
             new HoeItem(ModToolMaterials.OMNIUM, new Item.Settings()
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.OMNIUM, -4.0F, 0.0F))));
 
+    public static final Item LAQUEM_AXE = registerItem("laquem_axe",
+            new AxeItem(ModToolMaterials.OMNIUM, new Item.Settings()
+                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.LAQUEM, 5.0F, -3.0F))));
+    public static final Item LAQUEM_SWORD = registerItem("laquem_sword",
+            new SwordItem(ModToolMaterials.OMNIUM, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.LAQUEM, 3, -2.4F))));
+    public static final Item LAQUEM_PICKAXE = registerItem("laquem_pickaxe",
+            new PickaxeItem(ModToolMaterials.OMNIUM, new Item.Settings()
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.LAQUEM, 1.0F, -2.8F))));
+    public static final Item LAQUEM_SHOVEL = registerItem("laquem_shovel",
+            new ShovelItem(ModToolMaterials.OMNIUM, new Item.Settings()
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.LAQUEM, 1.5F, -3.0F))));
+    public static final Item LAQUEM_HOE = registerItem("laquem_hoe",
+            new HoeItem(ModToolMaterials.OMNIUM, new Item.Settings()
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.LAQUEM, -4.0F, 0.0F))));
+
 //Armor
     public static final Item OMNIUM_HELMET = registerItem(
             "omnium_helmet",
@@ -57,6 +73,23 @@ public class ModItems {
     public static final Item OMNIUM_BOOTS = registerItem(
             "omnium_boots",
             new ArmorItem(ModArmorMaterials.OMNIUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(40)))
+    );
+
+    public static final Item LAQUEM_HELMET = registerItem(
+            "laquem_helmet",
+            new ArmorItem(ModArmorMaterials.LAQUEM_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(40)))
+    );
+    public static final Item LAQUEM_CHESTPLATE = registerItem(
+            "laquem_chestplate",
+            new ArmorItem(ModArmorMaterials.LAQUEM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(40)))
+    );
+    public static final Item LAQUEM_LEGGINGS = registerItem(
+            "laquem_leggings",
+            new ArmorItem(ModArmorMaterials.LAQUEM_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(40)))
+    );
+    public static final Item LAQUEM_BOOTS = registerItem(
+            "laquem_boots",
+            new ArmorItem(ModArmorMaterials.LAQUEM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(40)))
     );
 
     private static Item registerItem(String name, Item item) {
@@ -80,11 +113,20 @@ public class ModItems {
             entries.add(OMNIUM_SWORD);
             entries.add(OMNIUM_SHOVEL);
             entries.add(OMNIUM_HOE);
+            entries.add(LAQUEM_AXE);
+            entries.add(LAQUEM_PICKAXE);
+            entries.add(LAQUEM_SWORD);
+            entries.add(LAQUEM_SHOVEL);
+            entries.add(LAQUEM_HOE);
 
             entries.add(OMNIUM_HELMET);
             entries.add(OMNIUM_CHESTPLATE);
             entries.add(OMNIUM_LEGGINGS);
             entries.add(OMNIUM_BOOTS);
+            entries.add(LAQUEM_HELMET);
+            entries.add(LAQUEM_CHESTPLATE);
+            entries.add(LAQUEM_LEGGINGS);
+            entries.add(LAQUEM_BOOTS);
         });
     }
 }

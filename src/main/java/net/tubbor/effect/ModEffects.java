@@ -17,6 +17,9 @@ public class ModEffects {
                             Identifier.of(Omnium.MOD_ID, "frostburn"), -0.10f,
                             EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
+    public static final RegistryEntry<StatusEffect> VENOM = registerStatusEffect("venom",
+            new VenomEffect(StatusEffectCategory.HARMFUL, 0x00FF00));
+
     private static RegistryEntry<StatusEffect>  registerStatusEffect(String name, StatusEffect statusEffect) {
         return Registry.registerReference(Registries.STATUS_EFFECT, Identifier.of(Omnium.MOD_ID, name), statusEffect);
     }

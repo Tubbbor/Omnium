@@ -7,6 +7,7 @@ import net.tubbor.effect.ModEffects;
 import net.tubbor.enchantment.ModEnchantmentEffects;
 import net.tubbor.item.ModItemGroups;
 import net.tubbor.item.ModItems;
+import net.tubbor.util.ModLootTableModifiers;
 import net.tubbor.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,5 +24,6 @@ public class Omnium implements ModInitializer {
 		ModEffects.registerEffects();
 		ModEnchantmentEffects.registerEnchantmentEffects();
 		ModWorldGeneration.generateModWorldGen();
+		ModLootTableModifiers.modifyLootTables();
 	}
 }

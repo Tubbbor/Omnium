@@ -1,9 +1,11 @@
-// 1.21.1	2025-05-11T00:36:10.3381861	Omnium/Tags for minecraft:item
-238ccc17a5f24df58e5a28a38b06177f7a32ee86 data\minecraft\tags\item\trimmable_armor.json
-9946f7f93fc122d750a755279341dcc25d85e5e1 data\minecraft\tags\item\pickaxes.json
+// 1.21.1	2025-05-11T15:47:13.9503313	Omnium/Tags for minecraft:item
+353829293a79eccb5414c3e7b88a187a91266395 data\minecraft\tags\item\trimmable_armor.json
+2c89183966a02ebc60ed970452647645ab3e53d4 data\minecraft\tags\item\pickaxes.json
 33ccefb292271be2ee7315c583825a7c88353ca5 data\omnium\tags\item\omnium_tools.json
 e83df289550cf19d324d722bd9de8e82ac85d20b data\omnium\tags\item\omnium_weapon.json
-afa0a9b9a34dde2c0b9cb285a349934466b20d7e data\minecraft\tags\item\swords.json
-9b2eaa9ede75cd83d4c78d8764d4564956aa8656 data\minecraft\tags\item\hoes.json
-79853c77e910590deea08748fe6cf80ebe8bab39 data\minecraft\tags\item\axes.json
-68704a114590c07f12aa12efb3be734e60612aca data\minecraft\tags\item\shovels.json
+f34c21f998efa42051a49554f89cef6ce052b4e5 data\omnium\tags\item\laquem_tools.json
+59f8efbe63c9686559dade6b34b7b82157154879 data\minecraft\tags\item\swords.json
+36716ae7ed0f4a56c1868a339d62e814679431b6 data\minecraft\tags\item\hoes.json
+3d83723a3884817a63b9b5a3721a6d33ad65f134 data\omnium\tags\item\laquem_weapon.json
+23fa7ce52dfaeb764037d0a79b0fac7858bae0e2 data\minecraft\tags\item\axes.json
+2e100cfc22dbdf7d737090c152f274ee0726af12 data\minecraft\tags\item\shovels.json

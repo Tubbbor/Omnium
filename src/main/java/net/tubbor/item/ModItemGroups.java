@@ -34,11 +34,20 @@ public class ModItemGroups {
                         entries.add(ModItems.OMNIUM_PICKAXE);
                         entries.add(ModItems.OMNIUM_SHOVEL);
                         entries.add(ModItems.OMNIUM_HOE);
+                        entries.add(ModItems.LAQUEM_AXE);
+                        entries.add(ModItems.LAQUEM_SWORD);
+                        entries.add(ModItems.LAQUEM_PICKAXE);
+                        entries.add(ModItems.LAQUEM_SHOVEL);
+                        entries.add(ModItems.LAQUEM_HOE);
 
                         entries.add(ModItems.OMNIUM_HELMET);
                         entries.add(ModItems.OMNIUM_CHESTPLATE);
                         entries.add(ModItems.OMNIUM_LEGGINGS);
                         entries.add(ModItems.OMNIUM_BOOTS);
+                        entries.add(ModItems.LAQUEM_HELMET);
+                        entries.add(ModItems.LAQUEM_CHESTPLATE);
+                        entries.add(ModItems.LAQUEM_LEGGINGS);
+                        entries.add(ModItems.LAQUEM_BOOTS);
                     })
                     .build());
 

@@ -7,10 +7,14 @@ import net.minecraft.enchantment.effect.EnchantmentEntityEffect;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.tubbor.enchantment.custom.VenomEnchantmentEffect;
 
 public class ModEnchantmentEffects {
     public static final MapCodec<? extends EnchantmentEntityEffect> FROST =
             registerEntityEffect("frost", FrostEnchantmentEffect.CODEC);
+
+    public static final MapCodec<? extends EnchantmentEntityEffect> VENOM =
+            registerEntityEffect("venom", VenomEnchantmentEffect.CODEC);
 
 
     private static MapCodec<? extends EnchantmentEntityEffect> registerEntityEffect(String name,

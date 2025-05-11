@@ -27,6 +27,16 @@ public class ModArmorMaterials {
             }), 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, () -> Ingredient.ofItems(ModItems.OMNIUM_INGOT),
                     List.of(new ArmorMaterial.Layer(Identifier.of(Omnium.MOD_ID, "omnium"))), 3.5F,0.15F));
 
+    public static final RegistryEntry<ArmorMaterial> LAQUEM_ARMOR_MATERIAL = registerArmorMaterial("laquem",
+            () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                map.put(ArmorItem.Type.BOOTS, 4);
+                map.put(ArmorItem.Type.LEGGINGS, 7);
+                map.put(ArmorItem.Type.CHESTPLATE, 9);
+                map.put(ArmorItem.Type.HELMET, 4);
+                map.put(ArmorItem.Type.BODY, 12);
+            }), 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, () -> Ingredient.ofItems(ModItems.LAQUEM_INGOT),
+                    List.of(new ArmorMaterial.Layer(Identifier.of(Omnium.MOD_ID, "laquem"))), 3.5F,0.15F));
+
 
     public static RegistryEntry<ArmorMaterial> registerArmorMaterial(String name, Supplier<ArmorMaterial> material) {
         return Registry.registerReference(Registries.ARMOR_MATERIAL, Identifier.of(Omnium.MOD_ID, name), material.get());
